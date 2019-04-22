@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import Twitter from './Twitter'
 
 const SEO = ({ title, description, image, pathname, article, isHome }) => (
   <StaticQuery
@@ -16,7 +15,6 @@ const SEO = ({ title, description, image, pathname, article, isHome }) => (
             defaultDescription,
             siteUrl,
             defaultImage,
-            twitterUsername,
           }
         }
       }) => {
@@ -57,18 +55,11 @@ const SEO = ({ title, description, image, pathname, article, isHome }) => (
                     "addressRegion" : "CA",
                     "postalCode" : "92606"
                   },
-                  "image" : "${image}",
+                  "image" : "${seo.image}",
                   "priceRange" : "$$$"
                 }
               `}
             </script>
-
-            <Twitter
-              username={twitterUsername}
-              title={seo.title}
-              description={seo.description}
-              image={seo.image}
-            />
           </Helmet>
         )
       }
@@ -103,7 +94,6 @@ const query = graphql`
         defaultDescription: description
         siteUrl: siteUrl
         defaultImage: image
-        twitterUsername
       }
     }
   }

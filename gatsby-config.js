@@ -7,7 +7,6 @@ module.exports = {
     siteUrl: `https://gatsby-starter.webbroi.dev`,
     image: `/gatsby-og-image.jpg`,
     description: `Some description of this project.`,
-    twitterUsername: `projectTwitter`,
 
     mainMenuLinks: [
       { name: 'Sample Page', link: '/sample-page' },
