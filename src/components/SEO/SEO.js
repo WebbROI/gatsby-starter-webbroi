@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Twitter from './Twitter'
-import Schema from './Schema'
 
 const SEO = ({ title, description, image, pathname, article, isHome }) => (
   <StaticQuery
@@ -42,14 +41,34 @@ const SEO = ({ title, description, image, pathname, article, isHome }) => (
             )}
             {seo.image && <meta property="og:image" content={seo.image} />}
 
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context" : "http://schema.org",
+                  "@type" : "LocalBusiness",
+                  "name" : "Project Name",
+                  "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00",
+                  "telephone" : "123-456-7890",
+                  "email" : "jon@snow.com",
+                  "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "1234 Acme Ave., Suite 101",
+                    "addressLocality" : "Irvine",
+                    "addressRegion" : "CA",
+                    "postalCode" : "92606"
+                  },
+                  "image" : "${image}",
+                  "priceRange" : "$$$"
+                }
+              `}
+            </script>
+
             <Twitter
               username={twitterUsername}
               title={seo.title}
               description={seo.description}
               image={seo.image}
             />
-            
-            <Schema image={seo.image} />
           </Helmet>
         )
       }
