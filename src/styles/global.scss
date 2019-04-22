@@ -1,0 +1,35 @@
+@import 'header';
+@import 'menu';
+@import 'visibility';
+@import 'footer';
+@import 'layouts';
+@import 'forms';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form,
+button,
+div.item,
+div.header,
+input,
+textarea,
+table {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.ui.menu {
+  align-items: center;
+}  
+
+.srv-validation-message {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
