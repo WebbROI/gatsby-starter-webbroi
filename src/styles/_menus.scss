@@ -1,11 +1,12 @@
-.menu-container {
-  width: 1200px;  
+.main-menu.menu {
+  background: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 0;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
 
-  .main-menu {
-    background: #fff;
-    margin-top: 0;
-    padding: 1rem 0;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  .menu-container {
+    width: 1200px;
 
     .logo {
       padding: 0 15px 0 0;

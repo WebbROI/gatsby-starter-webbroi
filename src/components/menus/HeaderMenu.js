@@ -16,8 +16,8 @@ const HeaderMenu = () => (
         const mainMenuLinksData = data.site.siteMetadata.mainMenuLinks
         const servicesMenuLinksData = data.site.siteMetadata.servicesMenuLinks
         return (
-          <Container className='menu-container'>
-            <Menu secondary size='large' className='main-menu'>          
+          <Menu secondary size='large' className='main-menu'>
+            <Container className='menu-container'>                      
               <Menu.Item as={Link} to='/' className='logo'>
                 <Logo />
               </Menu.Item>
@@ -40,8 +40,8 @@ const HeaderMenu = () => (
                   GET STARTED
                 </Button>
               </Menu.Item>          
-            </Menu>
-          </Container>
+            </Container>
+          </Menu>
         )  
       }
     }

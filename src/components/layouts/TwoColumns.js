@@ -32,7 +32,7 @@ const TwoColumns = () => (
                 <p className='paragraph'>
                   Galaxies preserve and cherish that pale blue dot muse about prime number courage of our questions billions upon billions?
                 </p>
-                <Button primary size='huge' as={Link} to='/dental-implants'>
+                <Button primary size='huge' as={Link} to='/'>
                   Learn More
                   <Icon name='right arrow' />
                 </Button>
@@ -47,7 +47,7 @@ const TwoColumns = () => (
                 <p className='paragraph'>
                   Corpus callosum intelligent beings colonies the sky calls to us the sky calls to us cosmic ocean.
                 </p>
-                <Button primary size='huge' as={Link} to='/tmj-treatment'>
+                <Button primary size='huge' as={Link} to='/'>
                   Learn More
                   <Icon name='right arrow' />
                 </Button>
@@ -68,7 +68,7 @@ const TwoColumns = () => (
                 <p className='paragraph'>
                   Rich in heavy atoms how far away gathered by gravity made in the interiors of collapsing stars how far away the ash of stellar alchemy.
                 </p>
-                <Button primary size='huge' as={Link} to='/sedation-anesthetic'>
+                <Button primary size='huge' as={Link} to='/'>
                   Learn More
                   <Icon name='right arrow' />
                 </Button>
