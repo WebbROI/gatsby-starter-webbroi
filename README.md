@@ -17,7 +17,7 @@ Kick off your project with this boilerplate. This starter ships with the main Ga
     Use the Gatsby CLI to create a new site, specifying this starter.
 
     ```sh
-    # create a new Gatsby site using the hello-world starter
+    # create a new Gatsby site using the this starter
     gatsby new project-name https://github.com/webbroi/gatsby-starter-webbroi
     ```
 
